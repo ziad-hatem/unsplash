@@ -1,0 +1,36 @@
+form {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+form input {
+    outline: none;
+    height: 24px;
+    border: 1px solid black;
+    color: black;
+    width: 500px;
+}
+
+form button {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+}
+
+.dark input{
+    border: 2px solid white;
+    background-color: #333;
+    color: white;
+}
+
+@media only screen and (max-width: 920px) {
+    form input {
+        width: 250px;
+    }
+  }
