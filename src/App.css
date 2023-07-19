@@ -72,3 +72,19 @@ section img {
     background-color: #333;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  section img {
+    width: 360px !important;
+    margin: 2px;
+  }
+  .toggle {
+    margin-right: 0px !important;
+  }
+  button {
+    margin-right: 0px !important;
+  }
+  #root {
+    width: 100vw;
+  }
+}
