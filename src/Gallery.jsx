@@ -23,9 +23,7 @@ const Gallery = () => {
       <section>
           {
               data.results.map((ele) => {
-                  console.log(ele);
               const url = ele?.urls?.regular;
-              console.log(url);
               return <SinglePhoto alt_description={ ele.alt_description } url={url} />
           })}
     </section>
