@@ -6,9 +6,9 @@ import ThemeToggle from './ThemeToggle';
 function App() {
   return (
     <>
-      <header style={{}}>
+      <header>
         <h1>UNSPLASH IMAGES</h1>
-        <ThemeToggle />
+        <div className='toggle'><ThemeToggle /></div>
       </header>
       <Form />
       <Gallery />

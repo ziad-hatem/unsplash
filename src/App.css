@@ -1,6 +1,6 @@
 #root {
   min-width: min-content;
-  min-height: min-content;
+  min-height: 100vh;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -28,10 +28,47 @@ section img {
 
 @media only screen and (max-width: 920px) {
   header {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  section {
+    width: 100%;
+  }
+  header h1 {
+    margin: 20px;
+    font-size: 32px;
+  }
+  .toggle {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: end;
+    margin-right: 10px;
+  }
+  .toggle button {
+    margin: 10px 0 -10px 0;
   }
   header button {
     margin: -15px 0 15px 0;
     left: 0 !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #333;
   }
 }

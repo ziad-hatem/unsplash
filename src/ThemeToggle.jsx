@@ -9,8 +9,11 @@ const ThemeToggle = () => {
     alignSelf: 'center',
     position: 'relative',
     height: 'maxContent',
-    left: '180px',
-    }}>{isDarkTheme ?  <BsFillSunFill /> : <BsFillMoonFill/>}</button>
+      left: '180px',
+      backgroundColor: 'transparent',
+      outline: 'none',
+      border: 'none'
+    }}>{isDarkTheme ?  <BsFillSunFill color='white' /> : <BsFillMoonFill/>}</button>
   )
 }
 

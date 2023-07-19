@@ -16,7 +16,7 @@ const Gallery = () => {
         return <div>Loading...</div>
     }
     if (isError) {
-        return <div>not Exsest</div>
+        return <div>not Exsited</div>
     }
 
   return (
